@@ -1,122 +1,63 @@
-$maincolor: #2f5f63;
-$logocolor: #d4f3ae;
-$lightgreencolor: #b1df77;
-$lightcolor: #f1f1e6;
+$maincolor: #504538;
+$logocolor: #C2A788;
+$lightgreencolor: #CDFFEB;
+$lightcolor: #F8F6F4;
 
 * {
   box-sizing: border-box;
   padding: 0;
   margin: 0;
-  font-family: "Montserrat";
-  text-align: center;
   scroll-behavior: smooth;
-}
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-  font-weight: 900;
-}
-.up-btn {
-  position: fixed;
-  bottom: 1%;
-  right: 1%;
-  color: transparent;
-}
-.scroll-btn {
-  color: rgba(20, 20, 20, 0.5);
-  font-size: 3rem;
-  transition: 0.5s;
-  &:hover {
-    color: rgba(53, 53, 53, 0.5);
-  }
 }
 
 /************ Navbar ************/
 
 .navbar {
-  padding: 1rem 10%;
+  padding: 0.5rem 2rem;
   width: 100%;
-  background-color: transparent;
-  display: flex;
   justify-content: space-between;
   place-items: center;
   position: fixed;
   top: 0;
   z-index: 1;
   transition: 2s ease-in-out;
-
+  display: flex;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  opacity: 0;
   .navLogo {
-    font-size: 2.5rem;
-    font-family: "Nunito";
-    color: $logocolor;
+    font-size: 1.8rem;
+    font-family: 'Abril Fatface', cursive;
+    color: white;
     text-decoration: none;
     transition: all 0.5s ease-in-out;
-    &:hover {
-      color: $lightgreencolor;
-    }
   }
 
   .navMenu ul {
     display: flex;
-    font-size: 1.1rem;
-
+    font-size: 0.9rem;
+    letter-spacing: 0.2rem;
+    font-weight: 100;
     li {
       list-style: none;
       margin-left: 1.8rem;
       a {
         text-decoration: none;
-        color: $lightcolor;
+        color: white;
         transition: all 0.5s ease-in-out;
         cursor: pointer;
         font-weight: 500;
-        &::after {
-          display: block;
-          content: "";
-          border-bottom: 2px solid black;
-          transform: scaleX(0) translate(0, 8px);
-          transition: transform 0.5s ease-in-out;
-        }
-        &:hover {
-          color: black;
-          &::after {
-            transform: scaleX(1) translate(0, 8px);
-          }
-        }
-        &:active {
-          text-shadow: 1px 1px 2px white;
-        }
+       
       }
     }
   }
 }
 
 .nav-scroll {
-  background-color: white;
+  background-color: $maincolor;
   box-shadow: 0 3px 10px rgba(0, 0, 0, 0.3);
-  .navLogo {
-    color: $lightgreencolor;
-    &:hover {
-      color: #ff8a43;
-    }
-  }
-  .navMenu ul li a {
-    color: $maincolor;
-    &::after {
-      border-bottom: 2px solid $lightgreencolor;
-    }
-    &:hover {
-      color: $lightgreencolor;
-    }
-    &:active {
-      text-shadow: 1px 1px 2px black;
-    }
-  }
-  a {
-    color: $maincolor;
-  }
+  display: flex;
+  opacity: 1;
+  transition: 2s;
 }
 
 //toggle button
@@ -230,51 +171,31 @@ h6 {
 .header {
   width: 100%;
   height: 100vh;
-  padding: 2rem 13%;
+  padding: 2rem 5%;
   display: flex;
   place-items: center;
-  font-size: 3.3rem;
-  font-weight: 900;
-  color: white;
+  font-size: 4rem;
+  font-weight: 600;
+  letter-spacing: 0.5rem;
+  color: $maincolor;
   min-height: 800px;
-  animation: show 3s;
   background-image: url("../img/bg.jpeg");
   z-index: 99;
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-size: cover;
   background-blend-mode: multiply;
-  background-color: $maincolor;
-
-  .color {
-    position: absolute;
-  }
-  .header-left {
+  background-color: $lightcolor;
+  text-align: left;
+  font-family: 'Montserrat', sans-serif;
+    .header-text{
     text-align: left;
-    animation: downmove 0.8s ease-in;
-    .myname {
-      font-size: 1.3rem;
-      color: $logocolor;
-      font-family: "Montserrat";
-      font-weight: 500;
-    }
-    div,
-    span {
-      text-align: left;
-      font-family: "Ubuntu";
-      margin: 1rem 0;
-    }
-    .text {
-      color: $lightcolor;
-    }
+    padding: 3rem;
+    background-color: rgba(255, 255, 255, 0.233);
+    animation: show 4s;
   }
 }
 
-.blink {
-  animation: blink 0.5s infinite;
-  font-size: 2.5rem;
-  color: $logocolor;
-}
 
 // media query
 

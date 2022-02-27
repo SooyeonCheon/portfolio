@@ -3,46 +3,13 @@
           box-sizing: border-box;
   padding: 0;
   margin: 0;
-  font-family: "Montserrat";
-  text-align: center;
   scroll-behavior: smooth;
-}
-
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-  font-weight: 900;
-}
-
-.up-btn {
-  position: fixed;
-  bottom: 1%;
-  right: 1%;
-  color: transparent;
-}
-
-.scroll-btn {
-  color: rgba(20, 20, 20, 0.5);
-  font-size: 3rem;
-  -webkit-transition: 0.5s;
-  transition: 0.5s;
-}
-
-.scroll-btn:hover {
-  color: rgba(53, 53, 53, 0.5);
 }
 
 /************ Navbar ************/
 .navbar {
-  padding: 1rem 10%;
+  padding: 0.5rem 2rem;
   width: 100%;
-  background-color: transparent;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
@@ -52,26 +19,29 @@ h6 {
   z-index: 1;
   -webkit-transition: 2s ease-in-out;
   transition: 2s ease-in-out;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  opacity: 0;
 }
 
 .navbar .navLogo {
-  font-size: 2.5rem;
-  font-family: "Nunito";
-  color: #d4f3ae;
+  font-size: 1.8rem;
+  font-family: 'Abril Fatface', cursive;
+  color: white;
   text-decoration: none;
   -webkit-transition: all 0.5s ease-in-out;
   transition: all 0.5s ease-in-out;
-}
-
-.navbar .navLogo:hover {
-  color: #b1df77;
 }
 
 .navbar .navMenu ul {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  font-size: 1.1rem;
+  font-size: 0.9rem;
+  letter-spacing: 0.2rem;
+  font-weight: 100;
 }
 
 .navbar .navMenu ul li {
@@ -81,75 +51,28 @@ h6 {
 
 .navbar .navMenu ul li a {
   text-decoration: none;
-  color: #f1f1e6;
+  color: white;
   -webkit-transition: all 0.5s ease-in-out;
   transition: all 0.5s ease-in-out;
   cursor: pointer;
   font-weight: 500;
 }
 
-.navbar .navMenu ul li a::after {
-  display: block;
-  content: "";
-  border-bottom: 2px solid black;
-  -webkit-transform: scaleX(0) translate(0, 8px);
-          transform: scaleX(0) translate(0, 8px);
-  -webkit-transition: -webkit-transform 0.5s ease-in-out;
-  transition: -webkit-transform 0.5s ease-in-out;
-  transition: transform 0.5s ease-in-out;
-  transition: transform 0.5s ease-in-out, -webkit-transform 0.5s ease-in-out;
-}
-
-.navbar .navMenu ul li a:hover {
-  color: black;
-}
-
-.navbar .navMenu ul li a:hover::after {
-  -webkit-transform: scaleX(1) translate(0, 8px);
-          transform: scaleX(1) translate(0, 8px);
-}
-
-.navbar .navMenu ul li a:active {
-  text-shadow: 1px 1px 2px white;
-}
-
 .nav-scroll {
-  background-color: white;
+  background-color: #504538;
   -webkit-box-shadow: 0 3px 10px rgba(0, 0, 0, 0.3);
           box-shadow: 0 3px 10px rgba(0, 0, 0, 0.3);
-}
-
-.nav-scroll .navLogo {
-  color: #b1df77;
-}
-
-.nav-scroll .navLogo:hover {
-  color: #ff8a43;
-}
-
-.nav-scroll .navMenu ul li a {
-  color: #2f5f63;
-}
-
-.nav-scroll .navMenu ul li a::after {
-  border-bottom: 2px solid #b1df77;
-}
-
-.nav-scroll .navMenu ul li a:hover {
-  color: #b1df77;
-}
-
-.nav-scroll .navMenu ul li a:active {
-  text-shadow: 1px 1px 2px black;
-}
-
-.nav-scroll a {
-  color: #2f5f63;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  opacity: 1;
+  -webkit-transition: 2s;
+  transition: 2s;
 }
 
 .toggle-btn {
   display: none;
-  color: #f1f1e6;
+  color: #F8F6F4;
   font-size: 2rem;
   position: absolute;
   top: 0;
@@ -206,7 +129,7 @@ h6 {
   }
   .navbar .toggle-btn:hover {
     cursor: pointer;
-    color: #d4f3ae;
+    color: #C2A788;
   }
   .navMenu ul.toggle {
     display: -webkit-box;
@@ -218,7 +141,7 @@ h6 {
     padding: 0.5rem 0;
   }
   .navMenu ul.toggle li a {
-    color: #2f5f63;
+    color: #504538;
     -webkit-transition: 0.5s ease-in-out;
     transition: 0.5s ease-in-out;
     cursor: pointer;
@@ -296,59 +219,33 @@ h6 {
 .header {
   width: 100%;
   height: 100vh;
-  padding: 2rem 13%;
+  padding: 2rem 5%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   place-items: center;
-  font-size: 3.3rem;
-  font-weight: 900;
-  color: white;
+  font-size: 4rem;
+  font-weight: 600;
+  letter-spacing: 0.5rem;
+  color: #504538;
   min-height: 800px;
-  -webkit-animation: show 3s;
-          animation: show 3s;
   background-image: url("../img/bg.jpeg");
   z-index: 99;
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-size: cover;
   background-blend-mode: multiply;
-  background-color: #2f5f63;
-}
-
-.header .color {
-  position: absolute;
-}
-
-.header .header-left {
+  background-color: #F8F6F4;
   text-align: left;
-  -webkit-animation: downmove 0.8s ease-in;
-          animation: downmove 0.8s ease-in;
+  font-family: 'Montserrat', sans-serif;
 }
 
-.header .header-left .myname {
-  font-size: 1.3rem;
-  color: #d4f3ae;
-  font-family: "Montserrat";
-  font-weight: 500;
-}
-
-.header .header-left div,
-.header .header-left span {
+.header .header-text {
   text-align: left;
-  font-family: "Ubuntu";
-  margin: 1rem 0;
-}
-
-.header .header-left .text {
-  color: #f1f1e6;
-}
-
-.blink {
-  -webkit-animation: blink 0.5s infinite;
-          animation: blink 0.5s infinite;
-  font-size: 2.5rem;
-  color: #d4f3ae;
+  padding: 3rem;
+  background-color: rgba(255, 255, 255, 0.233);
+  -webkit-animation: show 4s;
+          animation: show 4s;
 }
 
 @media screen and (max-width: 992px) {
@@ -393,7 +290,7 @@ h6 {
 
 .about .about-header {
   font-size: 2.8rem;
-  color: #2f5f63;
+  color: #504538;
   margin-bottom: 5rem;
 }
 
@@ -432,10 +329,10 @@ h6 {
 
 .about .about-content .about-left .resume {
   margin: auto;
-  color: #2f5f63;
+  color: #504538;
   font-weight: 500;
   text-decoration: none;
-  border: 1px solid #2f5f63;
+  border: 1px solid #504538;
   padding: 0.6rem 1.5rem;
   margin-top: 1.3rem;
   border-radius: 20px;
@@ -449,7 +346,7 @@ h6 {
 
 .about .about-content .about-left .resume:hover {
   color: white;
-  background-color: #2f5f63;
+  background-color: #504538;
 }
 
 .about .about-content .about-right {
@@ -496,7 +393,7 @@ h6 {
 
 .skills .skill-header {
   font-size: 2.8rem;
-  color: #2f5f63;
+  color: #504538;
   margin-bottom: 5rem;
 }
 
@@ -533,7 +430,7 @@ h6 {
 
 .skills .row .col li i {
   margin-right: 1rem;
-  color: #2f5f63;
+  color: #504538;
 }
 
 @media screen and (max-width: 768px) {
@@ -563,7 +460,7 @@ h6 {
 
 .works .work-header {
   font-size: 2.8rem;
-  color: #2f5f63;
+  color: #504538;
   margin-bottom: 4rem;
 }
 
@@ -648,12 +545,12 @@ h6 {
 .works .row1 .etc a:hover,
 .works .row2 .etc a:hover,
 .works .row3 .etc a:hover {
-  color: #2f5f63;
+  color: #504538;
 }
 
 /*********** Footer **********/
 .footer {
-  background-color: #2f5f63;
+  background-color: #504538;
   margin: auto;
   padding: 3rem 20%;
   display: -webkit-box;
@@ -685,7 +582,7 @@ h6 {
 
 .footer .mail-addr a {
   text-decoration: none;
-  color: #d4f3ae;
+  color: #C2A788;
   cursor: pointer;
   -webkit-transition: 0.5s;
   transition: 0.5s;
@@ -701,7 +598,7 @@ h6 {
 }
 
 .footer .sns a {
-  color: #d4f3ae;
+  color: #C2A788;
   text-decoration: none;
   margin: 0.5rem;
   cursor: pointer;
@@ -792,6 +689,6 @@ h6 {
 }
 
 .nav-scroll .navMenu ul li a.clicked {
-  color: #b1df77;
+  color: #CDFFEB;
 }
 /*# sourceMappingURL=style.css.map */
