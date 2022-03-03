@@ -277,6 +277,10 @@ $lightcolor: #f8f6f4;
       border: 1px solid #b89e8196;
       padding: 2.5rem 2rem;
       text-align: center;
+      transition: 0.5s;
+      &:hover{
+        transform: translate(-5px,-5px);
+      }
       div {
         font-family: "Noto Sans", sans-serif;
         margin-top: 1.3rem;
@@ -287,7 +291,7 @@ $lightcolor: #f8f6f4;
     img {
       width: 90%;
       height: 70%;
-      opacity: 0.7;
+      opacity: 0.8;
     }
   }
   .btn {
@@ -304,6 +308,52 @@ $lightcolor: #f8f6f4;
       background-color: $logocolor;
       border: 3px solid $logocolor;
       color: $lightcolor;
+    }
+  }
+}
+
+/*********** index contact ************/
+.index-contact{
+  background-color: $lightcolor;
+  padding: 8rem 3rem;
+  font-family: "Noto Sans", sans-serif;
+  .contactform{
+    text-align: center;
+
+    form{
+      margin-top: 2rem;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      place-items: center;
+      input,textarea{
+        width: 500px;
+        margin-top: 1rem;
+        border: none;
+        background-color: $maincolor;
+        padding: 1rem 1.3rem;
+        color: white;
+        &::placeholder{
+          color: $lightcolor;
+          font-family: "Noto Sans", sans-serif;
+        }
+      }
+      textarea{
+        height: 100px;
+      }
+      button{
+        margin-top: 1.5rem;
+        color: $maincolor;
+        border: 3px solid $maincolor;
+        padding: 0.5rem 1.5rem;
+        transition: 0.4s;
+        &:hover {
+          background-color: $maincolor;
+          border: 3px solid $maincolor;
+          color: $lightcolor;
+          cursor: pointer;
+        }
+      }
     }
   }
 }
