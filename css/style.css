@@ -657,6 +657,7 @@
   }
   .index-contact .contactform form input, .index-contact .contactform form textarea {
     width: 90%;
+    border-radius: 0;
   }
   .main {
     padding: 8rem 5% 5rem 5%;
