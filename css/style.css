@@ -486,6 +486,7 @@
   padding: 0.5rem 1.5rem;
   -webkit-transition: 0.4s;
   transition: 0.4s;
+  background-color: transparent;
 }
 
 .index-contact .contactform form button:hover {
