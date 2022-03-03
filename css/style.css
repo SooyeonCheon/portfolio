@@ -678,5 +678,8 @@
   .index-event .eventlist {
     padding: 0 3%;
   }
+  .index-event .eventlist .event {
+    padding: 1rem 0;
+  }
 }
 /*# sourceMappingURL=style.css.map */
