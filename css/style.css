@@ -646,4 +646,16 @@
 .nav-scroll .navMenu ul li a.clicked {
   color: #c2a788;
 }
+
+@media screen and (max-width: 480px) {
+  .contactform form {
+    padding: 0 1rem 0 1rem;
+  }
+  .photos {
+    padding: 0;
+  }
+  .events .tb {
+    padding: 0;
+  }
+}
 /*# sourceMappingURL=style.css.map */
