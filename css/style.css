@@ -673,7 +673,7 @@
     border-collapse: collapse;
   }
   .events div.tb td {
-    padding: 1.2rem 1rem 1rem 1rem;
+    padding: 0.5rem;
   }
   .index-event .eventlist {
     padding: 0 3%;
