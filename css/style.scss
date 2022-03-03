@@ -58,6 +58,13 @@ $lightcolor: #f8f6f4;
   opacity: 1;
   transition: 2s;
 }
+.nav-default{
+  background-color: $maincolor;
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.3);
+  display: flex;
+  opacity: 1;
+  transition: 2s;
+}
 
 //toggle button
 
@@ -67,17 +74,12 @@ $lightcolor: #f8f6f4;
   font-size: 2rem;
   position: absolute;
   top: 0;
-  right: 32px;
+  right: 20px;
 }
 
 // media query
 
-@media screen and (max-width: 992px) {
-  .navbar {
-    padding: 1rem 3%;
-  }
-}
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 892px) {
   .navbar {
     padding: 0;
     margin: 0;
@@ -90,13 +92,13 @@ $lightcolor: #f8f6f4;
     .navMenu ul {
       display: none;
       flex-direction: column;
-      background-color: white;
+      background-color: $maincolor;
       border-bottom: 0.8px solid lightgray;
       transition: 5s;
       li {
         width: 100vw;
         text-align: center;
-        background-color: white;
+        background-color: $maincolor;
         margin-left: 0;
         a {
           width: 100vw;
@@ -105,7 +107,7 @@ $lightcolor: #f8f6f4;
     }
     .toggle-btn {
       display: block;
-      padding-top: 0.7rem;
+      padding-top: 0.2rem;
       transition: 0.5s ease-in-out;
       &:hover {
         cursor: pointer;
@@ -120,15 +122,13 @@ $lightcolor: #f8f6f4;
     li {
       padding: 0.5rem 0;
       a {
-        color: $maincolor;
+        color: $lightcolor;
         transition: 0.5s ease-in-out;
         cursor: pointer;
         font-weight: 500;
-        letter-spacing: 0;
 
         &:hover {
-          color: black;
-          letter-spacing: 0.2rem;
+          color: $logocolor;
         }
         &:active {
           text-shadow: 1px 1px 2px white;
@@ -177,13 +177,38 @@ $lightcolor: #f8f6f4;
     animation: show 5s;
     letter-spacing: 0.5rem;
     line-height: 1.5;
-    span {
+    .span {
       font-size: 3.5rem;
       color: $logocolor;
     }
   }
 }
 
+@keyframes down {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-1rem);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
+.scroll-down{
+  color: rgba(255, 255, 255, 0.33);
+  position: absolute;
+  right: 50%;
+  bottom: 0;
+  transition: 0.4s;
+  animation: down 1s infinite;
+  font-size: 4.5rem;
+  &:hover{
+    cursor: pointer;
+    color: rgba(255, 255, 255, 0.507);
+  }
+}
 // media query
 
 @media screen and (max-width: 768px) {
@@ -199,7 +224,7 @@ $lightcolor: #f8f6f4;
       padding: 2rem 4rem;
       letter-spacing: 0.2rem;
       line-height: 1;
-      span {
+      .span {
         font-size: 2.5rem;
         color: $logocolor;
       }
@@ -226,12 +251,11 @@ $lightcolor: #f8f6f4;
   .photos {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    gap: 20px;
+    gap: 24px;
     .image {
       overflow: hidden;
       img {
         max-width: 100%;
-        padding: 0 1rem;
         transform: scale(1);
         transition: all 0.5s linear;
       }
@@ -327,7 +351,7 @@ $lightcolor: #f8f6f4;
       justify-content: center;
       place-items: center;
       input,textarea{
-        width: 500px;
+        width: 440px;
         margin-top: 1rem;
         border: none;
         background-color: $maincolor;
@@ -420,7 +444,7 @@ $lightcolor: #f8f6f4;
 
 .events {
   background-color: $lightcolor;
-  padding: 8rem 6rem 5rem 6rem;
+  padding: 8rem 2rem 5rem 2rem;
   display: grid;
   place-items: center;
   font-family: "Noto Sans", sans-serif;
