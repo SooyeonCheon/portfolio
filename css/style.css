@@ -658,11 +658,21 @@
   .index-contact .contactform form input, .index-contact .contactform form textarea {
     width: 90%;
   }
-  .photos {
-    padding: 0 3%;
+  .main {
+    padding: 8rem 5% 5rem 5%;
   }
   .events .tb {
     padding: 0 3%;
+    font-size: 1rem;
+  }
+  .events .tb table,
+  .events .tb tr,
+  .events .tb td {
+    border-collapse: collapse;
+  }
+  .events .tb td {
+    padding: 1.5rem 0rem 1rem 0rem;
+    border-bottom: 2px solid #504538;
   }
   .index-event .eventlist {
     padding: 0 3%;
