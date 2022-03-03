@@ -1,7 +1,7 @@
 $maincolor: #504538;
-$logocolor: #C2A788;
-$lightgreencolor: #CDFFEB;
-$lightcolor: #F8F6F4;
+$logocolor: #c2a788;
+$lightgreencolor: #cdffeb;
+$lightcolor: #f8f6f4;
 
 * {
   box-sizing: border-box;
@@ -25,7 +25,7 @@ $lightcolor: #F8F6F4;
   opacity: 0;
   .navLogo {
     font-size: 1.8rem;
-    font-family: 'Abril Fatface', cursive;
+    font-family: "Abril Fatface", cursive;
     color: white;
     text-decoration: none;
     transition: all 0.5s ease-in-out;
@@ -43,9 +43,9 @@ $lightcolor: #F8F6F4;
         color: white;
         transition: all 0.5s ease-in-out;
         cursor: pointer;
-        font-family: 'Noto Sans', sans-serif;
+        font-family: "Noto Sans", sans-serif;
       }
-      .nav-active{
+      .nav-active {
         color: $logocolor;
       }
     }
@@ -170,21 +170,20 @@ $lightcolor: #F8F6F4;
   background-blend-mode: multiply;
   background-color: rgba(0, 0, 0, 0.664);
   text-align: left;
-  font-family: 'Abril Fatface', cursive;
-  
-    .header-text{
+  font-family: "Abril Fatface", cursive;
+
+  .header-text {
     text-align: left;
     padding: 3rem 4rem;
     animation: show 5s;
     letter-spacing: 0.5rem;
     line-height: 1.5;
-    span{
+    span {
       font-size: 3.5rem;
       color: $logocolor;
     }
   }
 }
-
 
 // media query
 
@@ -195,13 +194,13 @@ $lightcolor: #F8F6F4;
     background-image: url("../img/bg.jpeg");
     background-size: 100%;
     height: 100%;
-    .header-text{
+    .header-text {
       text-align: center;
       font-size: 3rem;
       padding: 2rem 4rem;
       letter-spacing: 0.2rem;
       line-height: 1;
-      span{
+      span {
         font-size: 2.5rem;
         color: $logocolor;
       }
@@ -210,10 +209,10 @@ $lightcolor: #F8F6F4;
 }
 
 /********** index-bio ********/
-.index-bio{
+.index-bio {
   background-color: $lightcolor;
   padding: 8rem 5rem;
-  font-family: 'Noto Sans', sans-serif;
+  font-family: "Noto Sans", sans-serif;
   font-size: 1.1rem;
   text-align: center;
   line-height: 2;
@@ -222,87 +221,87 @@ $lightcolor: #F8F6F4;
 }
 
 /********** index-photo ********/
-.index-photo{
+.index-photo {
   background-color: $logocolor;
   padding: 8rem 3rem;
-  .photos{
+  .photos {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px,1fr));
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     gap: 20px;
-    .image{
+    .image {
       overflow: hidden;
-      img{
+      img {
         max-width: 100%;
         padding: 0 1rem;
         transform: scale(1);
         transition: all 0.5s linear;
       }
     }
-    .image:hover img{
+    .image:hover img {
       transform: scale(1.1);
     }
   }
-  .btn{
+  .btn {
     padding: 2rem;
     text-align: center;
   }
-  a{
+  a {
     text-decoration: none;
     color: $lightcolor;
     border: 3px solid $lightcolor;
     padding: 0.5rem 1.5rem;
     transition: 0.4s;
-    &:hover{
+    &:hover {
       background-color: $lightcolor;
       border: 3px solid $lightcolor;
-      color: $logocolor
+      color: $logocolor;
     }
   }
 }
-.titles{
+.titles {
   padding-bottom: 3rem;
   font-size: 3rem;
   color: $lightcolor;
   font-weight: 600;
   text-align: center;
-  font-family: 'Noto Sans', sans-serif;
+  font-family: "Noto Sans", sans-serif;
 }
 
 /********** index-event ********/
-.index-event{
+.index-event {
   padding: 8rem 3rem;
-  .eventlist{
+  .eventlist {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px,1fr));
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     gap: 30px;
-    .event{
+    .event {
       border: 1px solid #b89e8196;
       padding: 2.5rem 2rem;
       text-align: center;
-      div{
-        font-family: 'Noto Sans', sans-serif;
+      div {
+        font-family: "Noto Sans", sans-serif;
         margin-top: 1.3rem;
         color: $maincolor;
       }
     }
-    
-    img{
+
+    img {
       width: 90%;
       height: 70%;
       opacity: 0.7;
     }
   }
-  .btn{
+  .btn {
     padding: 2rem;
     text-align: center;
   }
-  a{
+  a {
     text-decoration: none;
     color: $logocolor;
     border: 3px solid $logocolor;
     padding: 0.5rem 1.5rem;
     transition: 0.4s;
-    &:hover{
+    &:hover {
       background-color: $logocolor;
       border: 3px solid $logocolor;
       color: $lightcolor;
@@ -311,26 +310,26 @@ $lightcolor: #F8F6F4;
 }
 
 /*********** Bio ************/
-.bio{
+.bio {
   background-color: $lightcolor;
   width: 100%;
   padding: 8rem 6rem 5rem 6rem;
-  .content{
+  .content {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(400px,1fr));
+    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
     justify-content: center;
     place-items: center;
   }
-  .picture{
+  .picture {
     padding: 5%;
-    img{
-      width:100%;
+    img {
+      width: 100%;
       box-shadow: 10px 10px 0 #504538b2;
     }
   }
-  .text{
+  .text {
     padding: 6% 8%;
-    font-family: 'Noto Sans', sans-serif;
+    font-family: "Noto Sans", sans-serif;
     line-height: 2;
     font-size: 1.2rem;
     font-weight: 600;
@@ -338,53 +337,53 @@ $lightcolor: #F8F6F4;
   }
 }
 
-
 /*********** Photo ************/
-.main{
+.main {
   background-color: $lightcolor;
   padding: 8rem 6rem 5rem 6rem;
-  .photos{
+  .photos {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px,1fr));
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     gap: 20px;
-    .image{
+    .image {
       overflow: hidden;
-      img{
+      img {
         max-width: 100%;
         transform: scale(1);
         transition: all 0.5s linear;
       }
     }
-    .image:hover img{
+    .image:hover img {
       transform: scale(1.1);
     }
   }
 }
 
 /*********** events ************/
-.title{
+.title {
   padding-bottom: 3rem;
   font-size: 3rem;
   color: $logocolor;
   font-weight: 600;
   text-align: center;
-  font-family: 'Noto Sans', sans-serif;
+  font-family: "Noto Sans", sans-serif;
 }
 
-.events{
+.events {
   background-color: $lightcolor;
   padding: 8rem 6rem 5rem 6rem;
   display: grid;
   place-items: center;
-  font-family: 'Noto Sans', sans-serif;
+  font-family: "Noto Sans", sans-serif;
 
-  div.tb{
+  div.tb {
     font-size: 1.1rem;
-    table, tr, td{
+    table,
+    tr,
+    td {
       border-collapse: collapse;
-
     }
-    td{
+    td {
       padding: 1.5rem 2.4rem 1rem 2.4rem;
       border-bottom: 2px solid $maincolor;
     }
@@ -415,7 +414,7 @@ $lightcolor: #F8F6F4;
       }
     }
   }
-  .rights{
+  .rights {
     margin-top: 2rem;
   }
 }
@@ -425,7 +424,6 @@ $lightcolor: #F8F6F4;
     padding: 3rem 10%;
   }
 }
-
 
 .nav-scroll .navMenu ul li a.clicked {
   color: $logocolor;
