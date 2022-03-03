@@ -95,6 +95,9 @@
 }
 
 @media screen and (max-width: 892px) {
+  .scroll-down {
+    display: none;
+  }
   .navbar {
     padding: 0;
     margin: 0;
@@ -648,15 +651,21 @@
   color: #c2a788;
 }
 
-@media screen and (max-width: 480px) {
-  .contactform form {
-    padding: 0 1rem 0 1rem;
+@media screen and (max-width: 600px) {
+  .index-contact .contactform form {
+    padding: 0;
+  }
+  .index-contact .contactform form input, .index-contact .contactform form textarea {
+    width: 90%;
   }
   .photos {
-    padding: 0;
+    padding: 0 3%;
   }
   .events .tb {
-    padding: 0;
+    padding: 0 3%;
+  }
+  .index-event .eventlist {
+    padding: 0 3%;
   }
 }
 /*# sourceMappingURL=style.css.map */
